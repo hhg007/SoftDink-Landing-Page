@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="images/logo.png" alt="logo" class="logo"> </a>
+        <ul>
+          <li><a href="#">Home</a> </li>
+          <li><a href="#">SoftDrinks</a> </li>
+          <li><a href="#">Shop</a> </li>
+          <li><a href="#">About us</a> </li>
+          <li><a href="#">Contact us</a> </li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>Feel The <br> <span>Drinks</span> </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <a href="#">View Products</a>
+        </div>
+        <div class="imgBox">
+          <img src="images/coc.png" alt="" class="coc">
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><a href="#"><img src="images/coc.png" alt="" onclick="change('images/coc.png','#DF272F')"> </a> </li>
+        <li><a href="#"><img src="images/sprite.png" alt="" onclick="change('images/sprite.png','#029952')"> </a> </li>
+        <li><a href="#"><img src="images/pepsi.png" alt="" onclick="change('images/pepsi.png','#25282A')"> </a> </li>
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="images/facebook.png" alt=""> </a> </li>
+        <li><a href="#"><img src="images/instagram.png" alt=""> </a> </li>
+        <li><a href="#"><img src="images/twitter.png" alt=""> </a> </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function change(url,bgcolor){
+        document.querySelector('.coc').src=url;
+        const sec=document.querySelector('.sec');
+        sec.style.background = bgcolor;
+      }
+    </script>
+  </body>
+</html>
